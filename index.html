@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyal Rathore | Frontend Developer &amp; Computer Engineering Student</title>
+  <meta name="description" content="Portfolio of Priyal Rathore, a Computer Engineering student at SVKM's NMIMS Indore passionate about Frontend Development, UI/UX Design and Data Analytics." />
+  <meta name="author" content="Priyal Rathore" />
+  <meta name="keywords" content="Priyal Rathore, Frontend Developer, Computer Engineering, NMIMS Indore, UI UX Design, Data Analytics, Web Developer Portfolio" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Priyal Rathore | Frontend Developer & Computer Engineering Student" />
+  <meta property="og:description" content="Frontend Developer & Computer Engineering student at SVKM's NMIMS Indore, building responsive web apps and data-driven solutions." />
+  <meta property="og:image" content="profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23111827'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-weight='800' font-size='54' fill='%2338bdf8' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- Canvas Background -->
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" aria-label="Primary">
+    <div class="nav-logo">PR<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="#contact">Hire Me</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-tag reveal">Open to Frontend & Data Analyst roles ✦</div>
+    <h1 class="hero-title">
+      <span class="line reveal">Priyal</span>
+      <span class="line reveal gradient-text">Rathore</span>
+    </h1>
+    <p class="hero-role reveal">Computer Engineering Student</p>
+    <p class="hero-sub reveal">Passionate about building responsive web applications, intuitive user interfaces, and data-driven solutions through clean code, creativity, and continuous learning.</p>
+    <div class="hero-btns reveal">
+      <a href="#work" class="btn-primary">View Projects</a>
+      <a href="resume.pdf" class="btn-ghost" download>Download Resume</a>
+      <a href="#contact" class="btn-ghost">Contact Me →</a>
+    </div>
+    <div class="hero-scroll reveal">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <!-- Floating badges -->
+    <div class="float-badge badge-1 reveal">JavaScript ⚡</div>
+    <div class="float-badge badge-2 reveal">Python 🐍</div>
+    <div class="float-badge badge-3 reveal">Figma 🎨</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <span class="section-tag reveal">About Me</span>
+          <h2 class="section-title reveal">Turning ideas into <span class="gradient-text">real products.</span></h2>
+          <p class="about-text reveal">I'm Priyal Rathore, a B.Tech Computer Engineering student at SVKM's NMIMS Indore with a strong interest in Frontend Development, UI/UX Design, and Data Analytics.</p>
+          <p class="about-text reveal">I enjoy creating responsive, user-friendly web applications that combine functionality with modern design principles. Alongside web development, I continuously explore Artificial Intelligence tools, problem-solving, and emerging technologies to strengthen my technical foundation.</p>
+          <p class="about-text reveal">I believe in continuous learning, teamwork, and building projects that solve real-world problems while delivering meaningful user experiences.</p>
+          <div class="stats reveal">
+            <div class="stat"><span class="stat-num" data-target="7">0</span><span>+</span><p>Projects</p></div>
+            <div class="stat"><span class="stat-num" data-target="10">0</span><span>+</span><p>Technologies</p></div>
+            <div class="stat"><span class="stat-num" data-target="5">0</span><span>+</span><p>Certifications</p></div>
+            <div class="stat"><span class="stat-num" data-target="2027" data-static="true">2027</span><span></span><p>Graduation</p></div>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <div class="profile-wrapper">
+            <div class="profile-blob"></div>
+            <div class="profile-img">
+              <img src="profile.jpg" alt="Portrait of Priyal Rathore" loading="lazy" />
+            </div>
+            <div class="profile-card">
+              <span aria-hidden="true">🎓</span>
+              <div>
+                <strong>NMIMS Indore</strong>
+                <p>Class of 2027</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <span class="section-tag reveal">Tech Stack</span>
+      <h2 class="section-title reveal">Tools I <span class="gradient-text">work with.</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-delay="0">
+          <div class="skill-icon" aria-hidden="true">🖥️</div>
+          <h3>Frontend Development</h3>
+          <p>HTML5, CSS3, JavaScript, and building fully responsive, accessible web interfaces.</p>
+          <ul class="tag-list">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal" data-delay="100">
+          <div class="skill-icon" aria-hidden="true">🐍</div>
+          <h3>Programming</h3>
+          <p>Core programming languages used for problem-solving, coursework, and applications.</p>
+          <ul class="tag-list">
+            <li>Python</li><li>C++</li><li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal" data-delay="200">
+          <div class="skill-icon" aria-hidden="true">🗄️</div>
+          <h3>Database</h3>
+          <p>Designing schemas and writing queries for relational database systems.</p>
+          <ul class="tag-list">
+            <li>MySQL</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal" data-delay="300">
+          <div class="skill-icon" aria-hidden="true">🛠️</div>
+          <h3>Tools & Design</h3>
+          <p>Version control, editors, and design tools used day-to-day in my workflow.</p>
+          <ul class="tag-list">
+            <li>Git</li><li>GitHub</li><li>VS Code</li><li>Power BI</li><li>Figma</li><li>Canva</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal" data-delay="400">
+          <div class="skill-icon" aria-hidden="true">📚</div>
+          <h3>Core Subjects</h3>
+          <p>Foundational Computer Science coursework underpinning my engineering skills.</p>
+          <ul class="tag-list">
+            <li>Data Structures</li><li>Algorithms</li><li>DBMS</li><li>Operating Systems</li><li>Computer Networks</li><li>OOP</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work section" id="work">
+    <div class="container">
+      <span class="section-tag reveal">Selected Work</span>
+      <h2 class="section-title reveal">Projects I've <span class="gradient-text">built.</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" alt="Satellite orbiting earth data visualization concept" loading="lazy"/>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Python</span><span>PostgreSQL</span><span>SQL</span><span>Power BI</span><span>Pandas</span><span>NumPy</span></div>
+            <h3>Global Satellite Intelligence Platform (GSIP)</h3>
+            <p>An end-to-end data analytics platform that transforms raw satellite data into actionable business insights. Built a complete analytics pipeline involving data cleaning, PostgreSQL database design, SQL-based analysis, and interactive Power BI dashboards to visualize satellite launches, orbit classifications, mission types, operator performance, and country-wise satellite distribution.</p>
+            <ul class="feature-list">
+              <li>Processed and analyzed 7,553+ satellite records</li>
+              <li>Designed a PostgreSQL relational database</li>
+              <li>Developed reusable SQL queries and views</li>
+              <li>Built a four-page interactive Power BI dashboard</li>
+              <li>Generated business insights through data storytelling</li>
+            </ul>
+            <div class="project-btns">
+              <a href="#" class="project-link">GitHub ↗</a>
+              <a href="#" class="project-link project-link-alt">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card featured reveal">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80" alt="Laptop displaying a project management dashboard interface" loading="lazy"/>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>React</span><span>Vite</span><span>Tailwind</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>JWT</span></div>
+            <h3>DevTrack Pro</h3>
+            <p>A full-stack SaaS project and task management platform that enables individuals and teams to organize projects, manage tasks, track deadlines, and collaborate efficiently. Built with a modern React frontend, Node.js backend, PostgreSQL database, JWT authentication, and Prisma ORM on a scalable deployment architecture.</p>
+            <ul class="feature-list">
+              <li>Secure JWT-based authentication</li>
+              <li>Project and task management</li>
+              <li>Team collaboration workflow</li>
+              <li>PostgreSQL database with Prisma ORM</li>
+              <li>Production-ready deployment via Vercel, Render &amp; Neon</li>
+            </ul>
+            <div class="project-btns">
+              <a href="#" class="project-link">GitHub ↗</a>
+              <a href="#" class="project-link project-link-alt">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80" alt="Doctor appointment booking web interface concept" loading="lazy"/>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span><span>Node.js</span><span>Express</span><span>MySQL</span></div>
+            <h3>Skinfluence — Doctor Appointment Website</h3>
+            <p>Designed and developed a responsive doctor appointment booking platform featuring secure authentication, appointment scheduling, and an enhanced user experience for patients.</p>
+            <div class="project-btns">
+              <a href="#" class="project-link">GitHub ↗</a>
+              <a href="#" class="project-link project-link-alt">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?w=800&q=80" alt="Digital token ordering kiosk concept" loading="lazy"/>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Java</span><span>Android Studio</span><span>Firebase</span></div>
+            <h3>Caflo — Cafeteria Management App</h3>
+            <p>Developed a digital cafeteria management application that simplifies food ordering through a token-based system, reducing waiting time within a college cafeteria.</p>
+            <div class="project-btns">
+              <a href="#" class="project-link">GitHub ↗</a>
+              <a href="#" class="project-link project-link-alt">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80" alt="Personal portfolio website design concept" loading="lazy"/>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <h3>Personal Portfolio Website</h3>
+            <p>Designed and developed this modern personal portfolio showcasing projects, technical skills, certifications, achievements, and contact information.</p>
+            <div class="project-btns">
+              <a href="https://github.com/priyalllll" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80" alt="Network security lab environment concept" loading="lazy"/>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>VirtualBox</span><span>Kali Linux</span><span>Networking</span></div>
+            <h3>IP Spoofing Simulation</h3>
+            <p>Implemented an IP spoofing simulation using virtual machines to understand network vulnerabilities, packet manipulation, and cybersecurity attack techniques in a controlled lab environment.</p>
+            <div class="project-btns">
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education section" id="education">
+    <div class="container">
+      <span class="section-tag reveal">Academics</span>
+      <h2 class="section-title reveal">Education &amp; <span class="gradient-text">Credentials.</span></h2>
+
+      <div class="edu-card reveal">
+        <div class="edu-icon" aria-hidden="true">🎓</div>
+        <div>
+          <h3>Bachelor of Technology, Computer Engineering</h3>
+          <p class="edu-sub">SVKM's NMIMS Indore &nbsp;·&nbsp; Expected Graduation 2027</p>
+        </div>
+      </div>
+
+      <div class="cert-ach-grid">
+        <div class="cert-block reveal">
+          <h3 class="block-title">Certifications</h3>
+          <ul class="check-list">
+            <li>Google AI Certification</li>
+            <li>Google Generative AI</li>
+            <li>NPTEL — Data Structures &amp; Algorithms</li>
+            <li>NPTEL — Database Management Systems</li>
+          </ul>
+        </div>
+        <div class="cert-block reveal">
+          <h3 class="block-title">Achievements</h3>
+          <ul class="check-list">
+            <li>Creative Core Member, Google Developer Club — NMIMS Indore</li>
+            <li>Participated in technical competitions &amp; hackathons</li>
+            <li>Community service volunteer</li>
+            <li>Built multiple real-world academic &amp; personal projects</li>
+          </ul>
+        </div>
+        <div class="cert-block reveal">
+          <h3 class="block-title">Areas of Interest</h3>
+          <div class="interest-pills">
+            <span>Frontend Development</span>
+            <span>UI/UX Design</span>
+            <span>Data Analytics</span>
+            <span>Artificial Intelligence</span>
+            <span>Cybersecurity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper reveal">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Let's build <span class="gradient-text">something great.</span></h2>
+        <p class="contact-sub">I'm currently looking for Frontend Developer and Data Analyst opportunities — feel free to reach out.</p>
+        <div class="contact-links">
+          <a href="mailto:priyalrathore3024@gmail.com" class="contact-pill">✉️ Personal Email</a>
+          <a href="mailto:priyal.rathore526@nmims.in" class="contact-pill">🎓 University Email</a>
+          <a href="https://github.com/priyalllll" class="contact-pill" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/priyal-rathore-11516a295" class="contact-pill" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="resume.pdf" class="contact-pill" download>Resume ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">PR<span class="dot">.</span></div>
+        <p>Designed &amp; Developed by Priyal Rathore · © 2026 Priyal Rathore. All Rights Reserved.</p>
+        <a href="#home" class="back-top">↑ Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
